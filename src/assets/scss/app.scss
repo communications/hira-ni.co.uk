@@ -1,5 +1,7 @@
 @charset 'utf-8';
 
+@import 'components/fonts';
+@import 'components/colour';
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -62,3 +64,10 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+//custom
+@import 'components/transitions';
+@import './node_modules/font-awesome/scss/font-awesome.scss';
+@import 'components/fontawesome-paths';
+@import 'components/spacing-utilities';
+@import 'components/custom';

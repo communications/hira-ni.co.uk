@@ -1,0 +1,112 @@
+.text-left-small
+{
+  @include breakpoint(small down) {
+    text-align: left;
+  }
+}
+
+.grey-lines
+{
+  background: repeating-linear-gradient(
+    45deg,
+    #fff,
+    #fff 4px,
+    #f4f4f4 4px,
+    #f4f4f4 6px
+  );
+}
+
+.white-lines
+{
+  background: repeating-linear-gradient(
+    45deg,
+    #eee,
+    #eee 4px,
+    #fff 4px,
+    #fff 6px
+  );
+}
+
+.button
+{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+form
+{
+  input,
+  select,
+  textarea
+  {
+    border: 1px solid #ccc !important;
+  }
+}
+
+.bl
+{
+  font-weight:600;
+}
+
+.light
+{
+  font-weight: 400;
+}
+
+.cover-background
+{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header
+{
+  .menu
+  {
+    li
+    {
+      a
+      {
+        padding:20px;
+
+        &:hover
+        {
+          background: #f4f4f4;
+          @include transition-all;
+        }
+      }
+    }
+  }
+}
+
+.promo-callout
+{
+  margin-top: -100px;
+
+  &.one
+  {
+    background-image: url('../img/bubble-1.png');
+    width: 370px;
+    height: 370px;
+    position: relative;
+
+    p
+    {
+      font-size: 48px;
+      line-height: 52px;
+      margin:0;
+      position: absolute;
+      top: 50%;
+      margin-top: -48px;
+      width: 300px;
+      left: 50px;
+    }
+  }
+}
+
+.pull-up
+{
+  position: relative;
+  top: -100px;
+}
