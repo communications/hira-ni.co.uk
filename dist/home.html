@@ -1,5 +1,56 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+<body>
+
 <div class="off-canvas-content" data-off-canvas-content>
-  {{> header}}
+  <div class="grid-container m-t-30 m-b-30 m-small-t-0 m-small-t-0 header">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-9 medium-3 large-3 p-small-t-20">
+        <a href="./home.html">
+          <img src="../assets/img/hira-ni-full-colour-logo.svg" alt="" />
+        </a>
+      </div>
+      <div class="cell small-3 show-for-small-only">
+        <div class="p-l-20 p-r-20 p-small-t-10">
+          <a href="#" class="button large m-b-0" data-toggle="mobileMenu"><span class="fa fa-bars" aria-hidden="true"></span><span class="show-for-sr">Show mobile main menu</span></a>
+        </div>
+      </div>
+      <div class="cell medium-9 large-9 hide-for-small-only">
+        <div class="p-t-15">
+          <ul class="menu align-right">
+            <li><a href="./about.html" class="bl">About</a></li>
+            <li><a href="./contact.html" class="bl">Contact</a></li>
+            <li><a href="./our-offering.html" class="bl">Our Offering</a></li>
+            <li><a href="./events.html" class="bl">Events</a></li>
+            <li><a href="https://twitter.com/search?q=%23hirani" class="bl">#hirani</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- mobile menu -->
+  <div class="off-canvas position-right bg-primary-red" id="mobileMenu" data-off-canvas>
+    <div class="p-l-30 p-r-10 p-t-10 p-b-30 text-white-all">
+      <div class="text-right m-b-20">
+        <a href="#" class="button hollow large m-b-0" data-toggle="mobileMenu"><span class="fa fa-times" aria-hidden="true"></span></a>
+      </div>
+      <ul class="angle-right">
+        <li><a href="./about.html" class="bl">About</a></li>
+        <li><a href="./contact.html" class="bl">Contact</a></li>
+        <li><a href="./our-offering.html" class="bl">Our Offering</a></li>
+        <li><a href="./events.html" class="bl">Events</a></li>
+        <li><a href="https://twitter.com/search?q=%23hirani" class="bl">#hirani</a></li>
+      </ul>
+    </div>
+  </div>
 
   <div class="cover-background" style="background-image:url('assets/img/promo-background.jpg');">
     <div class="overlay-core-blue p-t-100 p-b-100 p-small-t-30 p-small-b-30">
@@ -103,5 +154,46 @@
       </div>
     </div>
   </div>
-  {{> footer}}
+  <footer>
+    <div id="footer" class="bg-primary-navy text-white-all blue-lines">
+      <div class="grid-container p-t-40 p-b-40">
+        <div class="grid-x grid-margin-x">
+          <div class="cell large-6">
+            <h2 class="h4">About HIRANI</h2>
+            <p class="m-b-5">Lorem ipsum dolor sit amet urna, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt.</p>
+            <p><a href="#"><span class="fa fa-angle-right" aria-hidden="true"></span>&nbsp;&nbsp;Read more</a></p>
+            <div class="grid-x">
+              <div class="cell large-6">
+                <h2 class="h4">Quick Links</h2>
+                <ul class="angle-right">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Our Offering</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="cell large-6">
+                <h2 class="h4">Contact Info</h2>
+                <ul class="angle-right">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Our Offering</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cell large-6 text-right">
+            <div class="promo-callout two text-white hide-for-small-only">
+              <p class="h1">Partnerships for health</p>
+            </div>
+            <a href="#"><img src="assets/img/hira-ni-white-logo.svg" alt="" width="300" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
+
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
