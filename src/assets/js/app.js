@@ -49,6 +49,7 @@ jQuery(document).ready(function() {
   });
 });
 
+require('hqy-lazyload');
 ;(function() {
     // Initialize
     var hqyLazy = new HqyLazyload();
