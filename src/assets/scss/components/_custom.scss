@@ -16,6 +16,17 @@
   );
 }
 
+.blue-lines
+{
+  background: repeating-linear-gradient(
+    45deg,
+    $primary-navy,
+    $primary-navy 4px,
+    lighten($primary-navy, 5%) 4px,
+    lighten($primary-navy, 5%) 6px
+  );
+}
+
 .white-lines
 {
   background: repeating-linear-gradient(
@@ -83,6 +94,10 @@ form
 .promo-callout
 {
   margin-top: -100px;
+  @include breakpoint(small only)
+  {
+    margin-top: 30px;
+  }
 
   &.one
   {
@@ -90,6 +105,12 @@ form
     width: 370px;
     height: 370px;
     position: relative;
+    @include breakpoint(small only)
+    {
+      width: 280px;
+      height: 280px;
+      background-size: cover;
+    }
 
     p
     {
@@ -101,6 +122,32 @@ form
       margin-top: -48px;
       width: 300px;
       left: 50px;
+      @include breakpoint(small only)
+      {
+        font-size: 38px;
+        line-height: 42px;
+        left: 30px;
+      }
+    }
+  }
+
+  &.two
+  {
+    background-image: url('../img/bubble-red.svg');
+    width: 270px;
+    height: 270px;
+    position: relative;
+
+    p
+    {
+      font-size: 34px;
+      line-height: 38px;
+      margin:0;
+      position: absolute;
+      top: 50%;
+      margin-top: -34px;
+      width: 200px;
+      left: 30px;
     }
   }
 }
@@ -108,5 +155,67 @@ form
 .pull-up
 {
   position: relative;
-  top: -100px;
+  top: -60px;
+  @include breakpoint(small down)
+  {
+    top: 0;
+  }
+}
+
+ul.angle-right,
+.wysiwyg ul
+{
+  margin-left: 0;
+  list-style: none;
+
+  li
+  {
+    position: relative;
+    padding-left: 15px;
+
+    &::before
+    {
+      font-family: FontAwesome;
+      content: "\f105";
+      position: absolute;
+      left: 0;
+      top:0;
+    }
+
+    ol
+    {
+      li
+      {
+        padding-left: 0;
+
+        &::before
+        {
+          content:'';
+        }
+      }
+    }
+  }
+}
+
+
+p.lead
+{
+  @include breakpoint(small only)
+  {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.off-canvas
+{
+  background: $primary-red;
+}
+
+.button.large
+{
+  @include breakpoint(small only)
+  {
+    font-size: 18px;
+  }
 }
