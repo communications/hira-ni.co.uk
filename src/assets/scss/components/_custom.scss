@@ -251,3 +251,25 @@ p.lead
     font-size: 18px;
   }
 }
+
+.wysiwyg
+{
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  table,
+  ul,
+  ol
+  {
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+
+  img
+  {
+    width: 100%;
+  }
+}
