@@ -48,3 +48,18 @@ jQuery(document).ready(function() {
     });
   });
 });
+
+;(function() {
+    // Initialize
+    var hqyLazy = new HqyLazyload();
+})();
+function lazyImageBackground() {
+  var imgDefer = document.querySelectorAll('div[data-bg]');
+  var style = "background-image: url({url})";
+  for (var i = 0; i < imgDefer.length; i++) {
+    imgDefer[i].setAttribute('style', style.replace("{url}", imgDefer[i].getAttribute('data-bg')));
+  }
+}
+window.onload = function(){
+  lazyImageBackground();
+}

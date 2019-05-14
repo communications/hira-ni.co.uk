@@ -12,6 +12,7 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "foundation-sites": "^6.5.1",
+    "hqy-lazyload": "^1.0.1",
     "jquery": "^3.4.1",
     "motion-ui": "^2.0.3",
     "slick-carousel": "^1.8.1",
