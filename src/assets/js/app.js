@@ -20,6 +20,7 @@ jQuery(document).ready(function() {
   jQuery('.uls-slick').each(function() {
     jQuery(this).slick({
       infinite: false,
+      lazyLoad: 'ondemand',
     	//swipeToSlide: true,
       prevArrow: jQuery('#' + jQuery(this).data('controls-id') + ' .uls-prev'),
       nextArrow: jQuery('#' + jQuery(this).data('controls-id') + ' .uls-next'),
