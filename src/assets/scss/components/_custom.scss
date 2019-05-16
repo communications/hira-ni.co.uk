@@ -295,7 +295,7 @@ p.lead
   th,
   blockquote
   {
-    a
+    a:not(button)
     {
       color:blue;
       font-weight:600;
