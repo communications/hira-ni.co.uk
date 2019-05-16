@@ -279,6 +279,16 @@ p.lead
     }
   }
 
+  ul
+  {
+    padding-left: 13px;
+
+    @include breakpoint(small down)
+    {
+      padding-left: 0;
+    }
+  }
+
   p,
   li,
   td,
