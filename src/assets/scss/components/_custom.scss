@@ -265,7 +265,36 @@ p.lead
   ol
   {
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 20px auto !important;
+  }
+
+  ul,
+  ol
+  {
+    padding-left: 30px;
+
+    @include breakpoint(small down)
+    {
+      padding-left: 0;
+    }
+  }
+
+  p,
+  li,
+  td,
+  th,
+  blockquote
+  {
+    a
+    {
+      color:blue;
+      font-weight:600;
+
+      &:hover
+      {
+        text-decoration: underline;
+      }
+    }
   }
 
   img
