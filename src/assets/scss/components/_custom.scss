@@ -381,3 +381,25 @@ ul.columns-three
     }
   }
 }
+
+.sq-form-error
+{
+  color: #b10e1e;
+  font-weight:600;
+  margin-top: 5px;
+}
+
+form
+{
+  label
+  {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+
+    strong
+    {
+      color: #b10e1e;
+    }
+  }
+}
