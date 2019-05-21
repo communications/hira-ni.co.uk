@@ -345,3 +345,39 @@ ul.columns-three
     -moz-columns: 1;
   }
 }
+
+.text-medium-left
+{
+  @include breakpoint(medium only)
+  {
+    text-align: left;
+  }
+}
+
+.text-small-left
+{
+  @include breakpoint(small only)
+  {
+    text-align: left;
+  }
+}
+
+.off-canvas
+{
+  ul
+  {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 20px 0 0;
+
+    li
+    {
+      a
+      {
+        display: block;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
