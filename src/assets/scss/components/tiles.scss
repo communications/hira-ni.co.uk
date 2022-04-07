@@ -1,0 +1,57 @@
+.news-tile {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06), 0 6px 6px rgba(0,0,0,0.06);
+  overflow: hidden;
+    margin-top: 1.5em;
+
+  .content {
+    padding: 25px 30px 30px;
+    color:$primary-color;
+
+    .date {
+
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+
+      i {
+        color: $primary-color;
+        margin-right: 7px;
+      }
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: none;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .button {
+      margin-bottom: 0px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .image-container {
+    overflow: hidden;
+        background-color: #112133;
+  }
+
+  .image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+}

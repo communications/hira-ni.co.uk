@@ -1,0 +1,18 @@
+footer {
+
+  background-color: $primary-color;
+  color: white;
+  position: relative;
+  margin-top: 25px;
+  padding-bottom: 2em;
+  padding-top: 2em;
+
+  img {
+    max-width: 220px;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}

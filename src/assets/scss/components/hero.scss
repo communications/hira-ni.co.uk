@@ -1,0 +1,99 @@
+.hero {
+
+background-size: cover;
+background-position: bottom;
+position: relative;
+background-position-y: 80%;
+
+.mobile-image {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+// &:after {
+//   content:"";
+//   position: absolute;
+//   left:0;
+//   right: 0;
+//   bottom: 0;
+//   height: 200px;
+//   background-image: url(../img/wave-1.svg);
+//   z-index: 99;
+//   background-position: bottom;
+// background-size: cover;
+// background-position-x: 22%;
+// }
+
+&:before {
+  content:"";
+  position: absolute;
+  left:0;
+  right: 0;
+  bottom: 0;
+
+  top:-35%;
+
+  z-index: 9;
+
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 28%, rgba(0,0,0,0.9206057422969187) 92%);
+  background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 28%, rgba(0,0,0,0.9206057422969187) 92%);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 28%, rgba(0,0,0,0.9206057422969187) 92%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+
+}
+
+.grid-container {
+  z-index: 999;
+  position: relative;
+}
+
+.content {
+  padding-top: 22em;
+padding-bottom: 4em;
+  color:white;
+
+  p {
+    font-size: 23px;
+    line-height: 29px;
+    max-width: 80%;
+  }
+
+  .button {
+    margin-top: 1.2em;
+  }
+
+
+
+}
+
+}
+
+
+.news-hero {
+
+
+  h1 {
+    text-transform: none;
+    font-size: 40px;
+    margin-bottom: 0px;
+    line-height: 50px;
+  }
+
+  img {
+    border-radius: 20px;
+  margin-top: 2em;
+  }
+
+  .content {
+    padding-bottom: 0em;
+    padding-top: 8em;
+  }
+
+  &:before {
+    bottom: 20%;
+    background-color: #a1a1a1;
+  }
+}
