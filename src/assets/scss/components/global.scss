@@ -2,9 +2,6 @@ body {
   color: $primary-color
 }
 
-.default-page {
-  margin-top: 100px;
-}
 
 .grid-container {
   max-width:1440px;
@@ -40,9 +37,9 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 56px;
   margin-bottom: 0px;
-  line-height: 70px;
+  line-height: 56px;
 }
 
 .news-hero .no-image-content {
@@ -85,15 +82,33 @@ p, li {
   font-size: 19px;
 }
 
+
+
 .button {
-  background-color: #000000;
-border: 2px solid white;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 18px;
+  background-color: rgba(0,0,0,0);
+  font-size: 24px;
   margin-top: 20px;
+    font-family: "obvia-condensed", sans-serif;
+    color: $primary-color;
+    margin-right: 10px;
+    font-weight: bold;
+    padding: 0px;
+    padding-bottom: 3px;
+    margin-right: 20px;
+      border-bottom: 2px solid $primary-color;
+}
+
+.white-button {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.dark-background {
+
+  .button {
+    color: white;
+    border-bottom: 2px solid white;
+  }
 }
 
 .content ul {
@@ -153,4 +168,19 @@ article {
     margin-bottom: 20px;
 
   }
+}
+
+
+body .subheading {
+  font-family: "obvia-condensed", sans-serif;
+  font-weight: bold;
+  font-size: 25px !important;
+  margin-bottom: 10px;
+  color: $secondary-color;
+  margin-top: 10px !important;
+}
+
+[data-aos] {
+  pointer-events: all;
+
 }

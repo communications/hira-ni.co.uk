@@ -4,6 +4,70 @@ background-size: cover;
 background-position: bottom;
 position: relative;
 background-position-y: 80%;
+position: relative;
+background: rgb(11,51,68);
+background: -moz-linear-gradient(90deg, rgba(11,51,68,1) 0%, rgba(33,76,94,1) 44%, rgba(33,76,94,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(11,51,68,1) 0%, rgba(33,76,94,1) 44%, rgba(33,76,94,1) 100%);
+background: linear-gradient(90deg, rgba(11,51,68,1) 0%, rgba(33,76,94,1) 44%, rgba(33,76,94,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b3344",endColorstr="#214c5e",GradientType=1);
+margin-bottom: 3.5em;
+
+&:after {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  background-color: white;
+  margin: auto;
+  z-index: 99;
+}
+
+
+.icon-scroll {
+  position: absolute;
+  top: initial;
+  left: 0;
+  box-shadow: inset 0 0 0 3px #000;
+  height: 55px;
+  width: 32px;
+  bottom: -2em;
+  right: 0;
+  margin: auto;
+  z-index: 9999;
+
+    &:before {
+      content: "";
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+    }
+  }
+
+&:before {
+  content: "";
+  position: absolute;
+  height: 900px;
+  width: 900px;
+  background-color: white;
+  opacity: 0.1;
+  border-radius: 50%;
+  top: 40%;
+  left:-300px;
+}
 
 .mobile-image {
   height: 250px;
@@ -11,54 +75,65 @@ background-position-y: 80%;
   background-position: center;
 }
 
-
-// &:after {
-//   content:"";
-//   position: absolute;
-//   left:0;
-//   right: 0;
-//   bottom: 0;
-//   height: 200px;
-//   background-image: url(../img/wave-1.svg);
-//   z-index: 99;
-//   background-position: bottom;
-// background-size: cover;
-// background-position-x: 22%;
-// }
-
-&:before {
-  content:"";
+.image {
   position: absolute;
-  left:0;
   right: 0;
+  top: 160px;
   bottom: 0;
+  left: 50%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  border-radius: 40px 0px 0px 0px;
 
-  top:-35%;
-
-  z-index: 9;
-
-  background: rgb(0,0,0);
-  background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 28%, rgba(0,0,0,0.9206057422969187) 92%);
-  background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 28%, rgba(0,0,0,0.9206057422969187) 92%);
-  background: linear-gradient(180deg, rgba(0,0,0,0) 28%, rgba(0,0,0,0.9206057422969187) 92%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
-
+  .device-image {
+    height: 100%;
+    max-height: 700px;
+    opacity: 1;
+    position: absolute;
+    left: -94px;
+    top: 43px;
+    opacity: 0.6;
+  }
 }
+
+h1 {
+  font-size: 70px;
+  line-height: 70px;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 25px;
+}
+
 
 .grid-container {
   z-index: 999;
   position: relative;
+  min-height: 800px;
+
+  .grid-x {
+    min-height: 800px;
+
+
+  }
 }
 
+
+
 .content {
-  padding-top: 22em;
+  padding-top: 220px;
 padding-bottom: 4em;
   color:white;
 
+
   p {
-    font-size: 23px;
-    line-height: 29px;
-    max-width: 80%;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 20px;
+    display: block;
+    max-width: 100%;
   }
 
   .button {
@@ -96,4 +171,43 @@ padding-bottom: 4em;
     bottom: 20%;
     background-color: #a1a1a1;
   }
+}
+
+.mouse {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -40px;
+  text-align: center;
+  z-index: 999;
+}
+
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 3px solid $primary-color;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+  display: block;
+  margin: auto;
+}
+.scroller {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fb0057;
+  margin-left: -2px;
+  animation-name: scroll;
+  animation-duration: 1.7s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }

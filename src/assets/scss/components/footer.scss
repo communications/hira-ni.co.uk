@@ -5,7 +5,25 @@ footer {
   position: relative;
   margin-top: 25px;
   padding-bottom: 2em;
-  padding-top: 2em;
+  padding-top: 3em;
+  overflow: hidden;
+
+  .grid-container {
+    position: relative;
+
+    .grid-x {
+      position: relative;
+      z-index: 99;
+    }
+  }
+
+  .device-image {
+    position: absolute;
+    right: 5em;
+    top: -7em;
+    bottom: 0em;
+    max-width: 327px;
+  }
 
   img {
     max-width: 220px;
@@ -15,4 +33,77 @@ footer {
     color: white;
     text-decoration: underline;
   }
+
+  ul {
+    margin: 0px;
+    list-style: none;
+    margin-top: 2em;
+    border-bottom: 2px solid #325c6d;
+    padding-bottom: 20px;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+      &:last-child {
+
+        a {
+            border-right: 0px;
+        }
+
+    }
+
+    }
+
+    li a {
+      border: 0px;
+      font-weight: bold;
+      text-decoration: none;
+        font-family: "obvia-condensed", sans-serif;
+        font-size: 22px;
+        border-right: 2px solid white;
+        padding-right: 20px;
+        margin-right: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+
+    }
+  }
+
+  .content {
+    margin-top: 2em;
+
+    h4 {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 0px;
+    }
+  }
+
+  h3 {
+    font-size: 29px;
+margin-top: 5px;
+  }
+
+  .sub-footer {
+  border-top: 2px solid #325c6d;
+    margin-top: 2em;
+    padding-top: 1em;
+
+  }
+
+  .get-in-touch {
+    background-color: #133c4d;
+    border-radius: 10px;
+    padding: 22px 35px 22px;
+    float: right;
+    min-width: 350px;
+    margin-bottom: 1em;
+  }
+
 }

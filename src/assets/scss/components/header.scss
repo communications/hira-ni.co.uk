@@ -1,6 +1,6 @@
 header {
 
-background-color: $primary-color;
+background-color: rgba (0,0,0,0);
 color:white;
 z-index: 9999;
 position: fixed;
@@ -9,7 +9,7 @@ right:0;
 top: 0;
 
 nav {
-  padding: 1em 0em;
+  padding: 2em 0em;
 
   ul {
     margin: 0px !important;
@@ -17,6 +17,8 @@ nav {
     li {
       padding: 10px 16px !important;
       border-radius: 10px;
+
+
     }
   }
 }
@@ -40,10 +42,11 @@ nav {
 }
 
 .text-logo {
-  height: 35px;
-float: left;
-margin-left: 1em;
-margin-top: 6px;
+  height: 90px;
+  float: left;
+  margin-left: 0em;
+  margin-top: 6px;
+  transition: height 0.15s ease-out;
 }
 
 .language-button {
@@ -96,7 +99,9 @@ margin-top: 6px;
 
 
 
-
+.header-fixed {
+  background-color: $primary-color;
+}
 
   @include breakpoint(small only) {
     img {
@@ -117,11 +122,13 @@ margin-top: 6px;
         padding: 0px 10px;
 
         a {
+          font-family: "obvia-condensed", sans-serif;
+          letter-spacing: 0px;
+          font-size: 20px ;
+          font-weight: 600 ;
+          letter-spacing: 1px ;
           color: white;
           text-transform: uppercase;
-          font-size: 14px;
-          padding: 0px;
-          letter-spacing: 2px;
 
           &:hover {
             border-bottom: 2px solid white;
@@ -131,7 +138,32 @@ margin-top: 6px;
 
         .is-active {
           font-weight: bold;
-         border-bottom: 2px solid $light-blue;
+          position: relative;
+
+          &:after {
+            content:"";
+            position: absolute;
+            height: 2px;
+            background-color: white;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+            margin-top: 20px;
+            z-index: 99;
+          }
+
+          &:before {
+            content:"";
+            position: absolute;
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            background-color: white;
+            right: 0;
+            z-index: 99;
+            bottom: -15px;
+          }
+
         }
 
         .sub-menu {
@@ -272,6 +304,11 @@ margin-top: 6px;
 
 
 
+.fixed-header {
+  background-color: $primary-color;
+  transition: height 0.15s ease-out;
+}
+
 
 @include breakpoint (medium down) {
   header nav {
@@ -326,7 +363,7 @@ ul li {
     }
 
     .text-logo {
-      height: 33px;
+      height: 60px;
         transition: height 0.15s ease-out;
     }
   }
@@ -357,4 +394,51 @@ header nav .drop-down li:last-child {
   a {
     border-bottom: 0px;
   }
+}
+
+
+header nav ul li a:hover {
+  border-bottom: 0px;
+  color: #fb0057;
+
+  &:before {
+    background-color: #fb0057
+  }
+
+  &:after {
+    background-color: #fb0057
+  }
+}
+
+.is-dropdown-submenu-parent.opens-right > .is-dropdown-submenu {
+  background-color: #143746;
+      top: 43px;
+      padding-top: 20px;
+      border-radius: 10px 0px 10px 10px;
+}
+
+
+header nav .drop-down li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 0px 20px;
+    letter-spacing: 2px;
+    display: block;
+    border-bottom: 1px solid #3e4956;
+    background-color: #143645;
+    font-size: 17px;
+    padding-bottom: 0px;
+    border: 0px;
+    padding: 0px;
+
+    &:hover {
+      border: 0px !important;
+      color: #fb0057;
+    }
+}
+
+header nav ul li:hover {
+  background-color: #153545;
+      border-radius: 10px;
 }

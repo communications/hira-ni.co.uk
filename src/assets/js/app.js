@@ -18,33 +18,33 @@ $(document).foundation();
 
 
 
-$(document).ready(function(){
-
-    var buttonclicked;
-
-    $('.nav-menu').click(function(){
-        if( buttonclicked!= true ) {
-            buttonclicked= true;
-            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
-            $('header nav').slideToggle();
-
-
-
-        }
-        else
-        {
-            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
-            $('header nav').slideToggle();
-
-        }
-    });
-});
+// $(document).ready(function(){
+//
+//     var buttonclicked;
+//
+//     $('.nav-menu').click(function(){
+//         if( buttonclicked!= true ) {
+//             buttonclicked= true;
+//             $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
+//             $('header nav').slideToggle();
+//
+//
+//
+//         }
+//         else
+//         {
+//             $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
+//             $('header nav').slideToggle();
+//
+//         }
+//     });
+// });
 
 
 // Sticky hamburger menu on tablet and mobile.
 $(document).ready(function() {
     $(window).scroll(function() {
-        if ($(document).scrollTop() > 100) {
+        if ($(document).scrollTop() > 30) {
             $('header').addClass('fixed-header');
             $('header .sub-header').slideUp();
 
