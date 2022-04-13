@@ -66,7 +66,7 @@ $(document).ready(function() {
 })
 
 $( "header nav ul .is-dropdown-submenu-parent" ).hover(function() {
-  $(".default-page").toggleClass('dark-overlay');
+  $("body").toggleClass('dark-overlay');
 });
 
 
