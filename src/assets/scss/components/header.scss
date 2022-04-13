@@ -363,7 +363,7 @@ ul li {
     }
 
     .text-logo {
-      height: 60px;
+      height: 55px;
         transition: height 0.15s ease-out;
     }
   }
@@ -442,4 +442,14 @@ header nav .drop-down li a {
 header nav ul li:hover {
   background-color: #153545;
       border-radius: 10px;
+}
+
+header {
+  z-index: 999999;
+}
+
+.fixed-header {
+  nav {
+    padding: 25px 0px;
+  }
 }

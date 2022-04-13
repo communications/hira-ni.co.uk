@@ -175,13 +175,14 @@ padding-bottom: 4em;
 }
 
 .mouse {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   margin: auto;
-  bottom: -40px;
+  bottom: 0;
   text-align: center;
   z-index: 999;
+  margin-top: -80px;
 }
 
 
@@ -211,4 +212,23 @@ padding-bottom: 4em;
   0% { opacity: 0; }
   10% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(15px); opacity: 0;}
+}
+
+.default-page {
+  position: relative;
+}
+
+.dark-overlay {
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: black;
+    z-index: 9999;
+    opacity: 0.6;
+  }
 }

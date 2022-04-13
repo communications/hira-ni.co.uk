@@ -108,19 +108,57 @@ p, li {
     padding: 0px;
     padding-bottom: 3px;
     margin-right: 20px;
-      border-bottom: 2px solid $primary-color;
+    position: relative;
+    border-bottom: 0px !important;
 
-      &:hover {
-        color: #e72d5b !important;
-    border-bottom-color: #e82d5b !important;
-        background-color: rgba(0,0,0,0);
 
+    &:after {
+      content:"";
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      height: 2px;
+      background-color: $primary-color;
+    }
+
+    &:before {
+      content:"";
+      width: 100%;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      right: 0;
+      bottom: -13px;
+      background-color: $primary-color;
+    }
+
+    &:hover {
+      color: #e72d5b !important;
+      border-bottom-color: #e82d5b !important;
+      background-color: rgba(0,0,0,0);
+
+      &:after, &:before {
+        background-color: #e82d5b !important;
       }
+    }
 }
 
 .white-button {
   color: white;
   border-bottom: 2px solid white;
+
+  &:after {
+
+    background-color: white;
+  }
+
+  &:before {
+
+    background-color: white;
+  }
 }
 
 .dark-background {
@@ -128,11 +166,33 @@ p, li {
   .button {
     color: white;
     border-bottom: 2px solid white;
+
+    &:after {
+
+      background-color: white;
+    }
+
+    &:before {
+
+      background-color: white;
+    }
   }
 }
 
 .content ul {
   margin: 2em 0em;
+}
+
+.news-tile .content .button {
+  font-size: 22px !important;
+
+  &:after {
+    display: none;
+  }
+
+  &:before {
+    display: none;
+  }
 }
 
 .team .content {
