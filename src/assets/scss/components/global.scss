@@ -26,6 +26,10 @@ body {
   padding: 8em 0em;
 }
 
+.no-padding-bottom {
+  padding-bottom: 0em;
+}
+
 
 .dark-background {
   background-color: $primary-color;
@@ -101,7 +105,7 @@ p, li {
         color: #e72d5b !important;
     border-bottom-color: #e82d5b !important;
         background-color: rgba(0,0,0,0);
-        
+
       }
 }
 
