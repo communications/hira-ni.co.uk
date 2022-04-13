@@ -145,7 +145,7 @@ p, li {
   border-bottom: 2px solid #ededed;
 
 img {
-  max-width: 70%;
+  max-width: 85%;
 }
 
 
@@ -207,4 +207,15 @@ body .subheading {
 
 .skip-to {
   display: none;
+}
+
+body blockquote {
+  margin: 2em 0em 2em;
+    border-left: 3px solid #06adb0;
+    font-style: italic;
+    padding-left: 29px;
+
+    p {
+      color: #214c5e;
+    }
 }

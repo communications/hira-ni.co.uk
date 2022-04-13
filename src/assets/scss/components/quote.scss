@@ -5,6 +5,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  background-position: 300px;
 
   &:before {
     content:"";
@@ -16,28 +17,34 @@
 
     z-index: 9;
 
-    background: rgb(0,0,0);
-  background: -moz-linear-gradient(280deg, rgba(0,0,0,0) 28%, rgba(0,0,0,0.9402135854341737) 92%);
-  background: -webkit-linear-gradient(280deg, rgba(0,0,0,0) 28%, rgba(0,0,0,0.9402135854341737) 92%);
-  background: linear-gradient(280deg, rgba(0,0,0,0) 28%, rgba(0,0,0,0.9402135854341737) 92%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    background: rgb(11,51,68);
+  background: -moz-linear-gradient(90deg, rgba(11,51,68,1) 0%, rgba(20,61,79,1) 22%, rgba(33,76,94,0.8505996148459384) 52%, rgba(33,76,94,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(11,51,68,1) 0%, rgba(20,61,79,1) 22%, rgba(33,76,94,0.8505996148459384) 52%, rgba(33,76,94,0) 100%);
+  background: linear-gradient(90deg, rgba(11,51,68,1) 0%, rgba(20,61,79,1) 22%, rgba(33,76,94,0.8505996148459384) 52%, rgba(33,76,94,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b3344",endColorstr="#214c5e",GradientType=1);
   }
 
   .grid-container {
     position: relative;
     z-index: 99;
 
+    .large-5 {
+      width: 60%;
+    }
+
     h2 {
       margin-bottom: 20px;
-      position: relative;
-      padding-left: 20px;
-      text-transform: none;
+    position: relative;
+    padding-left: 20px;
+    text-transform: none;
+    line-height: 47px;
+    font-size: 40px;
 
       &:before {
         content:" “ ";
         position: absolute;
         font-size: 300px;
-        color: $light-blue;
+        color: #105663;
         z-index: -1;
     top: 35px;
     left: -20px;
