@@ -3,10 +3,12 @@ footer {
   background-color: $primary-color;
   color: white;
   position: relative;
-  margin-top: 25px;
+  margin-top: 0px;
+  border-top: 10px solid #03aeb1;
   padding-bottom: 2em;
   padding-top: 3em;
   overflow: hidden;
+
 
   .grid-container {
     position: relative;
@@ -88,6 +90,7 @@ footer {
   h3 {
     font-size: 29px;
 margin-top: 5px;
+margin-bottom: 0px;
   }
 
   .sub-footer {
@@ -104,6 +107,16 @@ margin-top: 5px;
     float: right;
     min-width: 350px;
     margin-bottom: 1em;
+    position: relative;
+
+    .fa {
+      position: absolute;
+    left: 28px;
+    font-size: 53px;
+    line-height: 40px;
+    top: 29px;
+    color: #e72d5b;
+    }
   }
 
 }

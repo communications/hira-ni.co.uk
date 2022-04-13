@@ -96,6 +96,13 @@ p, li {
     padding-bottom: 3px;
     margin-right: 20px;
       border-bottom: 2px solid $primary-color;
+
+      &:hover {
+        color: #e72d5b !important;
+    border-bottom-color: #e82d5b !important;
+        background-color: rgba(0,0,0,0);
+        
+      }
 }
 
 .white-button {
@@ -183,4 +190,8 @@ body .subheading {
 [data-aos] {
   pointer-events: all;
 
+}
+
+.skip-to {
+  display: none;
 }
