@@ -376,8 +376,8 @@ ul li {
     right: 0 !important;
     top: 66px;
     border: 0px;
-    padding: 10px 0px;
-    width: 250px;
+    padding: 10px;
+    width: 300px;
 }
 
 header nav .drop-down li a {
@@ -412,7 +412,7 @@ header nav ul li a:hover {
 
 .is-dropdown-submenu-parent.opens-right > .is-dropdown-submenu {
   background-color: #143746;
-      top: 43px;
+      top: 52px;
       padding-top: 20px;
       border-radius: 10px 0px 10px 10px;
 }
@@ -427,7 +427,8 @@ header nav .drop-down li a {
     display: block;
     border-bottom: 1px solid #3e4956;
     background-color: #143645;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 16px;
     padding-bottom: 0px;
     border: 0px;
     padding: 0px;

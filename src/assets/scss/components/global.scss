@@ -220,7 +220,7 @@ body blockquote {
     }
 }
 
-.is-dropdown-submenu-parent {
+header nav ul .is-dropdown-submenu-parent {
 
   position: relative;
 
@@ -239,6 +239,10 @@ width: 0.65em;
 left: 0;
 	transform: rotate(135deg);
 
+  }
+
+  &:hover {
+        border-radius: 10px 10px 0px 0px !important;
   }
 
   a {
