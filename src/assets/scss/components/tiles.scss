@@ -31,6 +31,7 @@
     p {
       font-size: 16px;
       line-height: 22px;
+      display: none;
     }
 
     .button {
@@ -46,9 +47,9 @@
   }
 
   .image {
-    height: 250px;
-    background-size: cover;
-    background-position: center;
+    height: 200px;
+background-size: cover;
+background-position: top center;
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
     transition: all 0.5s;
@@ -61,5 +62,11 @@
 
   h2 {
     color: white;
+  }
+
+  .news-tile {
+    h2, a {
+      color: $primary-color;
+    }
   }
 }
