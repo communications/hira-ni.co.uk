@@ -427,11 +427,15 @@ header nav .drop-down li a {
     display: block;
     border-bottom: 1px solid #3e4956;
     background-color: #143645;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 19px;
     padding-bottom: 0px;
     border: 0px;
     padding: 0px;
+    font-weight: 400;
+    font-family: "Hind" ;
+    padding-bottom: 1em;
+border-bottom: 2px solid #214c5e;
 
     &:hover {
       border: 0px !important;
