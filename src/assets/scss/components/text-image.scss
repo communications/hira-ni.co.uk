@@ -24,23 +24,6 @@ overflow: hidden;
     background-position: center;
     overflow: hidden;
 
-    &:after {
-      content: "";
-        background-image: url(../img/white-bulb.png);
-        width: 100%;
-        height: 160%;
-        background-size: contain;
-        right: 0;
-        top: -20%;
-        bottom: -20%;
-        position: absolute;
-        background-repeat: no-repeat;
-        opacity: 0.3;
-        background-position: center;
-
-    }
-
-
   }
 
 

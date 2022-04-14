@@ -58,17 +58,17 @@ overflow: hidden;
     }
   }
 
-&:before {
-  content: "";
-  position: absolute;
-  height: 900px;
-  width: 900px;
-  background-color: white;
-  opacity: 0.1;
-  border-radius: 50%;
-  top: 40%;
-  left:-300px;
-}
+// &:before {
+//   content: "";
+//   position: absolute;
+//   height: 900px;
+//   width: 900px;
+//   background-color: white;
+//   opacity: 0.1;
+//   border-radius: 50%;
+//   top: 40%;
+//   left:-300px;
+// }
 
 .mobile-image {
   height: 250px;

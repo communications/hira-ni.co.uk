@@ -1,7 +1,22 @@
 .stats-counter-beta {
   padding: 4em 0em;
   color: white;
-  background-color: #13313d;
+  background-color: #cd1543;
+  position: relative;
+  overflow: hidden;
+
+  .background-device {
+    position: absolute;
+    opacity: 1;
+    right: 0;
+    height: 200%;
+    top: -30%;
+    right: -20%;
+  }
+
+  .grid-container {
+    position: relative;
+  }
 
   h3 {
     font-size: 40px;
@@ -11,7 +26,8 @@
 
   .stat {
     margin-top: 0.5em;
-    padding: 0em 20px;
+
+    text-align: left;
 
     span {
       font-size: 55px;
@@ -21,14 +37,12 @@
     }
   }
 
-  .large-push {
-    margin-left: 12%;
-  }
+
 
   h4 {
-    text-align: center;
     font-size: 21px;
     text-transform: uppercase;
+    padding-right: 20px;
     strong {
       display: block;
       font-size: 55px;
