@@ -234,17 +234,30 @@ padding-bottom: 4em;
 }
 
 .news-hero {
+
+  .image .device-image {
+    left: -50px;
+    top: 8px;
+  }
+
+  .image {
+    background-position: top center;
+  }
+
+
   .grid-container {
     z-index: 999;
     position: relative;
-    min-height: 500px;
+    min-height: 550px;
 
     .grid-x {
-      min-height: 500px;
+      min-height: 550px;
 
       .content {
         padding-bottom: 3em;
       }
+
+
     }
   }
 }
