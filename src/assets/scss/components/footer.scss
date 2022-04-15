@@ -128,4 +128,18 @@ margin-bottom: 0px;
     }
   }
 
+  .social {
+    display: inline-block;
+padding: 0px 2em;
+
+span {
+  width: 55px;
+    height: 55px;
+    background-color: #03aeb1;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 30px;
+}
+  }
+
 }
