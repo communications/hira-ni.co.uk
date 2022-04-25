@@ -2,6 +2,11 @@
 
 // Header
 
+header {
+  background-color: $primary-color;
+  padding: 1em 0em !important;
+}
+
 header .drop-down {
 
 
@@ -45,10 +50,12 @@ header .drop-down {
   }
 
   header .text-logo {
-    height: 31px;
-    float: left;
-    margin-left: 15px;
-    margin-top: 13px;
+    height: 86px;
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  left: 0;
+  width: initial;
 }
 
 header #nav-icon3 {
@@ -212,10 +219,11 @@ header .drop {
 }
 
 header .text-logo {
-    height: 31px;
-    float: left;
-    margin-left: 9px;
-    margin-top: 11px;
+  height: 86px;
+float: left;
+margin-left: 0px;
+margin-top: 0px;
+left: 0;
 }
 
 h1 {
@@ -232,7 +240,7 @@ h1 {
   background-size: 0px;
     background-position: top;
     background-repeat: no-repeat;
-        background-color: #262626;
+        background-color: $primary-color;
 }
 
 .hero .content {
@@ -417,7 +425,7 @@ article {
 
 
   .button {
-    font-size: 16px;
+    font-size: 21px;
   }
   .three-columns img {
     max-width: 80px;
@@ -431,6 +439,181 @@ article {
 header nav ul li a:hover {
   border-bottom: 0px;
 }
+
+
+.hero .image {
+    position: relative;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 3em;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    margin-top: 50px;
+    border-radius: 40px;
+}
+
+.hero .image .device-image {
+
+    left: -59px;
+    top: 54px;
+    opacity: 0.6;
+}
+
+.hero .grid-container .grid-x, .hero .grid-container {
+  min-height: 0px;
+}
+
+header #nav-icon3 span:nth-child(1), header #nav-icon3 span:nth-child(4) {
+  &:before {
+    content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  left: 0;
+  background-color: white;
+  position: absolute;
+  top: -3px;
+  z-index: -1;
+  }
+}
+
+header #nav-icon3 span:nth-child(3) {
+  &:before {
+    content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  right: 0;
+  background-color: white;
+  position: absolute;
+  top: -3px;
+  z-index: -1;
+  }
+}
+
+.hero:after {
+  height: 100px;
+  bottom: -55px;
+}
+
+.fixed-header .text-logo {
+    height: 41px;
+    width: initial;
+    margin-top: -10px;
+}
+
+.fixed-header #nav-icon3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 58px;
+}
+
+h3 {
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.stats-counter-beta .background-device {
+  display: none;
+}
+
+footer .get-in-touch {
+    background-color: #133c4d;
+    border-radius: 10px;
+    padding: 15px 25px 22px;
+    float: right;
+    min-width: 387px;
+    margin-bottom: 1em;
+    position: relative;
+    text-align: right;
+}
+
+footer .get-in-touch .fa {
+  top: 26px;
+}
+
+footer .device-image {
+  display: none;
+}
+
+footer ul {
+  text-align: left;
+}
+
+footer ul li a {
+  padding-right: 15px;
+  margin-right: 15px;
+}
+
+footer .sub-footer {
+  text-align: left;
+}
+
+.header-open .text-logo {
+  height: 55px;
+}
+
+header #nav-icon3.open span:nth-child(1):before, header #nav-icon3.open span:nth-child(4):before, header #nav-icon3.open span:nth-child(3):before {
+  display: none;
+}
+
+.is-dropdown-submenu-parent.opens-right > .is-dropdown-submenu {
+    background-color: #143746;
+    top: 10px;
+    border-radius: 0px;
+    padding: 20px 20px 10px;
+}
+
+header nav ul .is-dropdown-submenu-parent:after {
+  display: none;
+}
+
+header nav ul .is-dropdown-submenu-parent a {
+  padding-right: 0px;
+}
+
+header nav ul .is-dropdown-submenu-parent {
+  &:before {
+    border-style: solid;
+border-width: 0.15em 0.15em 0 0;
+content: '';
+display: inline-block;
+height: 0.65em;
+left: 0.15em;
+position: relative;
+top: 8px;
+-webkit-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+transform: rotate(-45deg);
+vertical-align: top;
+width: 0.65em;
+left: -10px;
+-webkit-transform: rotate(135deg);
+-ms-transform: rotate(135deg);
+transform: rotate(135deg);
+  }
+}
+
+header nav ul .is-dropdown-submenu-parent a {
+  padding-top: 10px;
+}
+
+header nav ul li .is-active:before {
+  bottom: -15px;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 42px;
+}
+
 }
 
 @media print {
@@ -445,4 +628,111 @@ header nav ul li a:hover {
   .sub-footer {
     display: none;
   }
+}
+
+@include breakpoint (small only) {
+  header {
+    padding: 1em !important;
+  }
+
+  header #nav-icon3 span {
+    height: 2px;
+  }
+
+  .hero .image {
+    height: 300px;
+  }
+
+  .hero .image .device-image {
+    left: -38px;
+    height: 260px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+    line-height: 43px;
+}
+
+.hero .content {
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+body .subheading {
+  font-size: 20px !important;
+}
+.medium-padding {
+    padding: 3em 0em;
+}
+
+.three-columns .large-8 {
+    margin-left: 0em;
+    max-width: 100%;
+}
+
+body h2 {
+    font-size: 33px;
+    line-height: 33px;
+}
+  .three-columns .content {
+    padding: 0em;
+  }
+
+  footer .get-in-touch {
+    min-width: 100%;
+  }
+
+  footer ul li {
+    display: block;
+  }
+
+  footer ul li a {
+    border-right: 0px;
+    border-bottom: 2px solid white;
+  }
+
+  footer ul li a {
+    border-right: 0px;
+    border-bottom: 2px solid #143c4c;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+  .header-open {
+      background-color: #103240;
+
+      nav {
+            border-bottom: 4px solid #e1bf00;
+            background-color: #214c5e;
+                border-top: 4px solid #214c5e;
+      }
+
+  }
+
+  header nav {
+    background-color: #214c5e;
+  }
+
+  .fixed-header nav {
+    top: 85px;
+  }
+
+  .fixed-header {
+    min-height: 85px;
+  }
+
+  .news-hero .grid-container .grid-x .content {
+    padding-bottom: 5em;
+}
+
+  // header nav, .fixed-header {
+  //   background-color: #214c5e;
+  // }
+
+  header nav .header-open.fixed-header {
+    background-color: #19232c;
+}
+
+
 }

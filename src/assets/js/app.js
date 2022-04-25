@@ -18,27 +18,29 @@ $(document).foundation();
 
 
 
-// $(document).ready(function(){
-//
-//     var buttonclicked;
-//
-//     $('.nav-menu').click(function(){
-//         if( buttonclicked!= true ) {
-//             buttonclicked= true;
-//             $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
-//             $('header nav').slideToggle();
-//
-//
-//
-//         }
-//         else
-//         {
-//             $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
-//             $('header nav').slideToggle();
-//
-//         }
-//     });
-// });
+$(document).ready(function(){
+
+    var buttonclicked;
+
+    $('.nav-menu').click(function(){
+        if( buttonclicked!= true ) {
+            buttonclicked= true;
+            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
+            $('header nav').slideToggle();
+            $('header').toggleClass('header-open');
+
+
+
+        }
+        else
+        {
+            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
+            $('header nav').slideToggle();
+              $('header').toggleClass('header-open');
+
+        }
+    });
+});
 
 
 // Sticky hamburger menu on tablet and mobile.
