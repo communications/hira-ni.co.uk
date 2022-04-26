@@ -650,7 +650,7 @@ h2 {
 
   header .logo {
     top: 0px;
-    left: 30px;
+    left: 15px;
 }
 
 header #nav-icon3 {
@@ -827,5 +827,13 @@ footer ul {
   border-bottom: 0px;
 }
 
+body .stats-counter-beta {
+  padding: 3em 0.5em !important;
+}
+
+.team .grid-x img {
+    max-width: 100%;
+    margin-bottom: 2em;
+}
 
 }
