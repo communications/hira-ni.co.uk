@@ -46,7 +46,7 @@ $(document).ready(function(){
 // Sticky hamburger menu on tablet and mobile.
 $(document).ready(function() {
     $(window).scroll(function() {
-        if ($(document).scrollTop() > 30) {
+        if ($(document).scrollTop() > 0) {
             $('header').addClass('fixed-header');
             $('header .sub-header').slideUp();
 
