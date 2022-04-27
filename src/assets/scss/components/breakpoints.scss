@@ -640,6 +640,10 @@ h2 {
   .sub-footer {
     display: none;
   }
+
+  .small-hero .grid-margin-x>.large-5 {
+    width: 100%;
+}
 }
 
 @include breakpoint (small only) {

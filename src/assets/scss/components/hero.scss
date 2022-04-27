@@ -259,7 +259,7 @@ padding-bottom: 4em;
   }
 }
 
-.small-hero {
+body .small-hero {
   .image {
     display: none;
   }
@@ -272,7 +272,7 @@ padding-bottom: 4em;
 
 
   .grid-margin-x > .large-5 {
-    width: calc(80.6667% - 1.875rem);
+    width: calc(50.6667% - 1.875rem);
 }
 
   @include breakpoint (small only) {
