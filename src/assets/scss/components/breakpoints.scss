@@ -63,7 +63,19 @@ header #nav-icon3 {
 }
 
 .default-page {
-    margin-top: 100px;
+    margin-top: 0px;
+}
+
+body header nav ul li:before {
+  background-color: #19232c;
+}
+
+header .drop-down:before {
+  display: none;
+}
+
+header .drop-down {
+  margin-bottom: 2em;
 }
 
 header nav {
@@ -451,7 +463,7 @@ header nav ul li a:hover {
     background-size: cover;
     background-position: center;
     z-index: 1;
-    margin-top: 50px;
+    margin-top: 10em;
     border-radius: 40px;
 }
 
