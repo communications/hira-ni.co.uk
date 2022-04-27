@@ -641,8 +641,13 @@ h2 {
     display: none;
   }
 
-  .small-hero .grid-margin-x>.large-5 {
+  .small-hero .grid-margin-x>.cell {
     width: 100%;
+}
+
+body .small-hero .grid-container {
+
+    margin-top: 4em;
 }
 }
 
