@@ -49,28 +49,21 @@ $(document).ready(function() {
         if ($(document).scrollTop() > 0) {
             $('header').addClass('fixed-header');
             $('header .sub-header').slideUp();
-
-
         }
         else {
             $('header').removeClass('fixed-header');
               $('header .sub-header').show();
         }
-
     })
 
-
     $('.drop').click(function(){
-
       $('.drop-down').slideToggle();
-
     });
-})
-
-$( "header nav ul .is-dropdown-submenu-parent" ).hover(function() {
-  $("body").toggleClass('dark-overlay');
 });
 
+// $( "header nav ul .is-dropdown-submenu-parent" ).hover(function() {
+//   $("body").toggleClass('dark-overlay');
+// });
 
 
 AOS.init({

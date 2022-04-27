@@ -230,6 +230,7 @@ padding-bottom: 4em;
     background-color: black;
     z-index: 9999;
     opacity: 0.6;
+    transition: all 0.3s ease;
   }
 }
 
@@ -258,6 +259,28 @@ padding-bottom: 4em;
       }
 
 
+    }
+  }
+}
+
+.small-hero {
+  .image {
+    display: none;
+  }
+  .grid-container {
+    min-height: 400px;
+    .grid-x {
+      min-height: 400px;
+    }
+  }
+
+  .grid-margin-x > .large-5 {
+    width: calc(80.6667% - 1.875rem);
+}
+
+  @include breakpoint (small only) {
+    .grid-container {
+      margin-top: 7em;
     }
   }
 }
