@@ -221,6 +221,15 @@ header .drop {
     margin-top: 17px;
   }
 
+  body .small-hero .grid-margin-x .cell {
+    width: 100%;
+}
+
+body .small-hero .grid-container {
+
+    margin-top: 4em;
+}
+
   header .logo {
     top: 3px;
   }
@@ -641,14 +650,7 @@ h2 {
     display: none;
   }
 
-  .small-hero .grid-margin-x>.cell {
-    width: 100%;
-}
 
-body .small-hero .grid-container {
-
-    margin-top: 4em;
-}
 }
 
 @include breakpoint (small only) {
