@@ -91,7 +91,7 @@ nav {
         background-color: #143645;
         top: -60px;
         right:0;
-        border-radius: 20px;
+        border-radius: 0px;
         position: absolute;
 
       }
@@ -481,4 +481,37 @@ header nav ul li a:hover {
 
 header nav .drop-down li a:hover {
   border-bottom: 2px solid #214c5e !important;
+}
+
+body header nav ul li {
+  position: relative;
+
+  a {
+    position: relative;
+    z-index: 99;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #214c5e;
+    border-radius: 0px;
+    width: 102%;
+    height: 120%;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+
+  }
+}
+
+body header nav ul .is-active {
+
+  &:before {
+    display: none;
+  }
+
+}
+
+body header nav ul li ul li:before {
+  background-color: #153545;
 }

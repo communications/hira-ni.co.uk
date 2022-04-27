@@ -5,11 +5,7 @@ background-position: bottom;
 position: relative;
 background-position-y: 80%;
 position: relative;
-background: rgb(11,51,68);
-background: -moz-linear-gradient(90deg, rgba(11,51,68,1) 0%, rgba(33,76,94,1) 44%, rgba(33,76,94,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(11,51,68,1) 0%, rgba(33,76,94,1) 44%, rgba(33,76,94,1) 100%);
-background: linear-gradient(90deg, rgba(11,51,68,1) 0%, rgba(33,76,94,1) 44%, rgba(33,76,94,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b3344",endColorstr="#214c5e",GradientType=1);
+background: #214c5e;
 margin-bottom: 3.5em;
 overflow: hidden;
 
@@ -273,6 +269,7 @@ padding-bottom: 4em;
       min-height: 400px;
     }
   }
+
 
   .grid-margin-x > .large-5 {
     width: calc(80.6667% - 1.875rem);
