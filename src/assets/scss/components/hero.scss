@@ -108,10 +108,10 @@ h2 {
 .grid-container {
   z-index: 999;
   position: relative;
-  min-height: 800px;
+  min-height: 500px;
 
   .grid-x {
-    min-height: 800px;
+    min-height: 500px;
 
 
   }
@@ -141,6 +141,10 @@ padding-bottom: 4em;
 
 }
 
+}
+
+.1141225-page .grid-container, .1141225-page .grid-container .grid-x {
+  min-height: 800px;
 }
 
 
